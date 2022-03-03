@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".SettingActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <TextView
+                android:id="@+id/setting_label_notification"
+                android:background="@drawable/custom_textview"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="通知設定"
+                android:textColor="?attr/attr_txt_label"
+                android:textSize="@dimen/font_small" />
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="start|center"
+                        android:text="@string/setting_notification_limit"
+                        android:textSize="@dimen/font_Small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/border"
+                        android:textSize="@dimen/font_Middle" />
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/setting_limit"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="98%"
+                                android:textSize="@dimen/font_Middle" />
+
+                            <ImageButton
+                                android:id="@+id/button_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/icon_setting"
+                                android:onClick="dialogGauge"
+                                tools:ignore="OnClick" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    -->
+
+                    <EditText
+                        android:id="@+id/setting_limit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/font_Middle"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/item_isSound"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="start|center"
+                        android:text="@string/setting_notification_sound"
+                        android:textSize="@dimen/font_Small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/border"
+                        android:textSize="@dimen/font_Middle" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5">
+
+                        <Switch
+                            android:id="@+id/setting_isSound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:switchMinWidth="@dimen/switch_length"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/item_isVibrate"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="start|center"
+                        android:text="@string/setting_notification_vibration"
+                        android:textSize="@dimen/font_Small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/border"
+                        android:textSize="@dimen/font_Middle" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        >
+
+                        <Switch
+                            android:id="@+id/setting_isVibrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:switchMinWidth="@dimen/switch_length"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/setting_label_theme"
+                android:background="@drawable/custom_textview"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:text="@string/setting_label_theme"
+                android:textColor="?attr/attr_txt_label"
+                android:textSize="@dimen/font_small" />
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="start|center"
+                        android:text="@string/setting_theme_dark"
+                        android:textSize="@dimen/font_Small" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/border"
+                        android:textSize="@dimen/font_Middle" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5">
+
+                        <Switch
+                            android:id="@+id/setting_isDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:switchMinWidth="@dimen/switch_length"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

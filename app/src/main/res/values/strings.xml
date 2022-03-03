@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">バッテリーマネージャー</string>
+    <string name="border">:</string>
+
+    <string name="setting_label_notification">通知設定</string>
+    <string name="setting_label_theme">テーマ</string>
+    <string name="setting_notification_limit">通知残量 [%]</string>
+    <string name="setting_notification_sound">通知音</string>
+    <string name="setting_notification_vibration">振動</string>
+    <string name="setting_theme_dark">ダークモード</string>
+
+    <string name="detail_remaining">残量</string>
+    <string name="detail_performance">性能</string>
+    <string name="detail_resource">充電電源</string>
+    <string name="detail_maximum">最大値</string>
+    <string name="detail_status">充電状態</string>
+    <string name="detail_type">種類</string>
+    <string name="detail_temperature">温度</string>
+    <string name="detail_voltage">電圧</string>
+</resources>

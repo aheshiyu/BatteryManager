@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 固定色 -->
+    <!-- <color name="color_primary_dark">#3700B3</color>
+    <color name="color_accent">#03DAC5</color> -->
+    <color name="color_progress_primary">#4DBEFF</color>
+    <color name="color_progress_secondary">#51CF08</color>
+    <color name="color_progress_under15">#DD3300</color>
+    <color name="color_progress_under40">#FFEE00</color>
+    <color name="color_progress_bg">#EEE</color>
+
+    <!-- ダークモード:オフ -->
+    <color name="color_txt_main_w">#000</color>
+    <color name="color_txt_label_w">#000</color>
+    <color name="color_bg_bar_action_w">#F5AF00</color>
+    <color name="color_bg_window_start_w">#FFF</color>
+    <color name="color_bg_window_end_w">#FFF</color>
+    <color name="color_bg_btn_w">#EEE</color>
+    <color name="color_bg_label_w">#EEE</color>
+    <color name="color_frame_w">#EEE</color>
+
+    <!-- ダークモード:オン -->
+    <color name="color_txt_main">#FFF</color>
+    <color name="color_txt_label">#EEE</color>
+    <color name="color_bg_bar_action">#4DBEFF</color>
+    <color name="color_bg_bar_navigation">#232A75</color>
+    <color name="color_bg_window_start">#000642</color>
+    <color name="color_bg_window_end">#000C8C</color>
+    <color name="color_bg_btn">#004E66</color>
+    <color name="color_bg_label">#004E66</color>
+    <color name="color_frame">#004E66</color>
+</resources>

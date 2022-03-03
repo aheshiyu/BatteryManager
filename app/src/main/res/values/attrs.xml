@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="attr_bg_window_start" format="color" />
+    <attr name="attr_bg_window_end" format="color" />
+    <attr name="attr_bg_btn" format="color" />
+    <attr name="attr_bg_label" format="color" />
+    <attr name="attr_txt_label" format="color" />
+    <attr name="attr_frame" format="color" />
+    <attr name="attr_time_visibility" format="enum" />
+</resources>

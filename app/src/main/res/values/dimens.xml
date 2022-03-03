@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_Large">110sp</dimen>
+    <dimen name="font_large">40sp</dimen>
+    <dimen name="font_Middle">30sp</dimen>
+    <dimen name="font_Small">24sp</dimen>
+    <dimen name="font_small">16sp</dimen>
+    <dimen name="switch_length">60dp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="label_radius">10dp</dimen>
+</resources>

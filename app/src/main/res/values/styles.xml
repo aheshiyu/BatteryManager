@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="theme_white" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/color_bg_bar_action_w</item>
+        <item name="android:textColor">@color/color_txt_main_w</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+        <item name="attr_bg_window_start">@color/color_bg_window_start_w</item>
+        <item name="attr_bg_window_end">@color/color_bg_window_end_w</item>
+        <item name="attr_txt_label">@color/color_txt_label_w</item>
+        <item name="attr_bg_label">@color/color_bg_label_w</item>
+        <item name="attr_bg_btn">@color/color_bg_btn_w</item>
+        <item name="attr_frame">@color/color_frame_w</item>
+    </style>
+
+    <style name="theme_dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/color_bg_bar_action</item>
+        <item name="android:textColor">@color/color_txt_main</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/color_bg_bar_navigation</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+        <item name="attr_bg_window_start">@color/color_bg_window_start</item>
+        <item name="attr_bg_window_end">@color/color_bg_window_end</item>
+        <item name="attr_txt_label">@color/color_txt_label</item>
+        <item name="attr_bg_label">@color/color_bg_label</item>
+        <item name="attr_bg_btn">@color/color_bg_btn</item>
+        <item name="attr_frame">@color/color_frame</item>
+    </style>
+
+    <style name="NoAnimation" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>
